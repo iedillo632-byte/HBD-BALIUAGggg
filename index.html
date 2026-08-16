@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Bro! 🎉</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.card{
+    width:90%;
+    max-width:420px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    color:white;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+img{
+    width:220px;
+    border-radius:20px;
+    border:4px solid white;
+    margin-bottom:15px;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    background:white;
+    color:#2196f3;
+    font-weight:bold;
+}
+
+.balloon{
+    position:absolute;
+    bottom:-100px;
+    width:40px;
+    animation:float 10s linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="bro.jpg" alt="Birthday Bro">
+
+<h1>🎉 Happy Birthday Bro! 🎂</h1>
+
+<p>
+HAPPY BIRTHDAY BROSKIE#67! 🍻
+</p>
+
+<button onclick="surprise()">🎁 Open Surprise</button>
+
+</div>
+
+<div class="balloon" style="left:10%;">🎈</div>
+<div class="balloon" style="left:30%;animation-delay:2s;">🎈</div>
+<div class="balloon" style="left:50%;animation-delay:4s;">🎈</div>
+<div class="balloon" style="left:70%;animation-delay:1s;">🎈</div>
+<div class="balloon" style="left:90%;animation-delay:3s;">🎈</div>
+
+<script>
+function surprise(){
+alert("🥳 HAPPY BIRTHDAY BRO! 🎂🎉\n\nStay strong, stay happy, at salamat sa pagiging solid na tropa! 🍻🔥");
+}
+</script>
+
+</body>
+</html>
